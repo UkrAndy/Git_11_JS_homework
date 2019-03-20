@@ -1,0 +1,92 @@
+/* *************
+***EXERCISE 1***
+************* */
+
+table {
+    margin: auto;
+}
+
+th {
+    text-align: center;
+}
+
+
+/* *************
+***EXERCISE 2***
+************* */
+
+.exercise_2 table,
+.exercise_2 td,
+.exercise_2 th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.exercise_2 tr:first-child th {
+    vertical-align: top;
+    background-color: royalblue;
+}
+
+.exercise_2 th {
+    background-color: lightgray;
+}
+
+.lesson {
+    font-weight: bold;
+}
+
+.trainer {
+    font-weight: bold;
+}
+
+.red {
+    font-weight: bold;
+    color: brown;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+/* *************
+***EXERCISE 3***
+************* */
+
+.exercise_3 {
+    text-align: center;
+}
+
+[id] {
+    color: yellow;
+}
+
+.exercise_3 a {
+    display: block;
+}
+
+.last,
+.ok {
+    color: brown;
+}
+
+a {
+    color: black;
+}
+
+[href $= ".net"] {
+    color: limegreen;
+}
+
+[href *= "css"] {
+    color: red;
+}
+

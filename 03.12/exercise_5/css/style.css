@@ -1,0 +1,153 @@
+table {
+    margin: 0 auto 30px;
+}
+
+.table_1 th {
+    background-color: green;
+    color: white;
+    text-align: left;
+}
+
+.table_1 tr:nth-child(2n) {
+    background-color: pink;
+}
+
+
+
+.table_2 {
+    background-color: lightblue;
+    border-spacing: 15px 0;
+}
+
+.table_2 th {
+    text-align: left;
+    color: dimgray;
+}
+
+.table_2 td {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.table_2 tr:last-child td:nth-child(2) {
+    visibility: hidden;
+}
+
+
+.table_3 {
+    border-spacing: 0;
+}
+
+.table_3 tr:first-child th {
+    border: 1px solid gray;
+}
+
+.table_3 tr:first-child + tr {
+    background-color: peru;
+}
+
+.table_3 td {
+    width: 80px;
+}
+
+.table_3 td:first-child {
+    width: auto;
+    text-align: right;
+}
+
+.table_3 tr:nth-child(2) ~ tr td:nth-child(2) ~ td {
+    text-align: right;
+}
+
+.table_3 tr:nth-child(n + 3) {
+    background-color: lightblue;
+}
+
+.table_3 tr:nth-child(2n + 4)  {
+    background-color: pink;
+}
+
+
+.table_4 {
+    border-spacing: 0;
+}
+
+.table_4 td {
+    width: 50px;
+    height: 50px;
+}
+
+.table_4 tr td:nth-child(2n + 1) {
+    background-color: green;
+}
+
+.table_4 tr:nth-child(2n) td:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.table_4 tr:nth-child(2n) td:nth-child(2n) {
+    background-color: green;
+}
+
+.table_4 tr:nth-child(3) td:nth-child(5) {
+    border: 2px solid purple;
+}
+
+
+
+.table_5 {
+    border-spacing: 0;
+}
+
+.table_5 td {
+    width: 50px;
+    border: 1px solid gray;
+}
+
+.table_5 tr td:nth-child(4n + 1) {
+    box-shadow: inset 10px 0px 3px pink;
+}
+
+.table_5 tr td:nth-child(4n + 2) {
+    box-shadow: inset 10px 0px 3px darkorchid;
+}
+
+.table_5 tr td:nth-child(4n + 3) {
+    box-shadow: inset 10px 0px 3px yellow;
+}
+
+.table_5 tr td:nth-child(4n + 4) {
+    box-shadow: inset 10px 0px 3px limegreen;
+}
+
+
+
+
+.task_6 {
+    width: 50%;
+    margin: auto;
+}
+
+.task_6 p {
+    color: red;
+    font-weight: bold;
+    margin: 0;
+}
+
+.task_6 p:nth-child(2n + 1) {
+    color: peru;
+}
+
+
+.task_7 {
+    width: 50%;
+    margin: auto;
+}
+
+.task_7 p:first-letter {
+    color: red;
+}
+
+.task_7 p:nth-child(3) {
+    color: green;
+}

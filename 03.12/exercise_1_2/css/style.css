@@ -1,0 +1,44 @@
+.edge {
+    color: red;
+}
+
+.my-class {
+    color: black;
+}
+
+h1 {
+    color: yellow;
+}
+
+h1:first-child {
+    color: black;
+}
+
+p {
+    color: lightblue;
+}
+
+p * {
+    color: black;
+}
+
+p > b {
+    color: rgb(255, 198, 40);
+}
+
+p > b:first-child {
+    color: black;
+}
+
+[id="MyTitle4"] {
+    color: green;
+}
+
+[id="MyTitle4"] a + b {
+    color: lightblue;
+}
+
+[id="MyTitle4"] b + b {
+    color: black;
+}
+
