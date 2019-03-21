@@ -131,7 +131,11 @@ do {
     }
 } while (num !== null);
 
-count == 0 ? console.log(0) : console.log(result);
+if (count > 0) {
+    console.log(0);
+} else {
+    console.log(result);
+}
 
 
 // 3.	суму двоцифрових;
@@ -167,12 +171,16 @@ do {
     }
 } while (num !== null);
 
-count > 0 ? console.log(positiveArithmeticMeanSum / count) : console.log(0);
+if (count > 0) {
+    console.log(positiveArithmeticMeanSum / count);
+} else {
+    console.log(0);
+}
 
 
 // 5.	найбільше від’ємне;
 
-let biggestNegative = -9007199254740992;
+let biggestNegative = -Infinity;
 let num;
 
 do {
