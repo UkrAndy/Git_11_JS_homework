@@ -193,3 +193,33 @@ do {
 } while (num !== null);
 
 console.log(biggestNegative);
+
+
+// 6.	кількість більших за перше число;
+
+let num;
+let firstNum;
+let count = -1;
+
+do {
+    num = prompt("Enter the number:", "");
+    let int = parseInt(num);
+
+    if (count == -1 && !isNaN(int)) {
+        firstNum = int;
+        count++;
+    }
+
+    if (int > firstNum) {
+        count++;
+    }
+
+} while (num !== null);
+
+console.log(count);
+
+
+// 7.	середнє геометричне додатних;
+// 8.	найменше з них;
+// 9.	кількість трицифрових;
+// 10.	добуток кратних 5;
