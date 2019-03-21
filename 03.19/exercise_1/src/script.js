@@ -130,7 +130,7 @@ do {
         result *= int;
     }
 } while (num !== null);
-``
+
 if (count > 0) {
     console.log(0);
 } else {
