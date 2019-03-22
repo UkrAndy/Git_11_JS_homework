@@ -210,9 +210,7 @@ do {
         count++;
     }
 
-    if (int > firstNum) {
-        count++;
-    }
+    if (int > firstNum) count++;
 
 } while (num !== null);
 
@@ -248,9 +246,7 @@ do {
     num = prompt("Enter the number:", "");
     let int = parseInt(num);
 
-    if (int < min) {
-        min = int;
-    }
+    if (int < min) min = int;
 
 } while (num !== null);
 
@@ -266,9 +262,7 @@ do {
     num = prompt("Enter the number:", "");
     let int = parseInt(num);
 
-    if (int > -1000 && int < -99 || int > 99 && int < 1000) {
-        count++;
-    }
+    if (int > -1000 && int < -99 || int > 99 && int < 1000) count++;
 
 } while (num !== null);
 
