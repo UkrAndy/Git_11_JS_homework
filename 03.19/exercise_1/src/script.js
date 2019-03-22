@@ -220,6 +220,78 @@ console.log(count);
 
 
 // 7.	середнє геометричне додатних;
+
+let num;
+let count = 0;
+let multiply = 1;
+
+do {
+    num = prompt("Enter the number:", "");
+    let int = parseInt(num);
+
+    if (int > 0) {
+        multiply *= int;
+        count++;
+    }
+
+} while (num !== null);
+
+console.log(Math.pow(multiply, 1 / count));
+
+
 // 8.	найменше з них;
+
+let num;
+let min = Infinity;
+
+do {
+    num = prompt("Enter the number:", "");
+    let int = parseInt(num);
+
+    if (int < min) {
+        min = int;
+    }
+
+} while (num !== null);
+
+console.log(min);
+
+
 // 9.	кількість трицифрових;
+
+let num;
+let count = 0;
+
+do {
+    num = prompt("Enter the number:", "");
+    let int = parseInt(num);
+
+    if (int > -1000 && int < -99 || int > 99 && int < 1000) {
+        count++;
+    }
+
+} while (num !== null);
+
+console.log(count);
+
 // 10.	добуток кратних 5;
+
+let num;
+let count = 0;
+let multip = 1;
+
+do {
+    num = prompt("Enter the number:", "");
+    let int = parseInt(num);
+
+    if (int % 5 == 0) {
+        multip *= int;
+        count++;
+    }
+
+} while (num !== null);
+
+if (count != 0) 
+    console.log(multip);
+else 
+    console.log(0);
