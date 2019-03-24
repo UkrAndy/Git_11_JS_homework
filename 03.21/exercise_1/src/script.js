@@ -158,3 +158,103 @@
     }
     console.log(arrSeriesLength);
 }
+
+// 4.	Дано масив розмірності N і число k ( k<N). Здійснити циклічний зсув елементів масиву вліво на k позицій. Наприклад для масиву [1,2,3,4,5,6] та k=2 після виконання зсуву отримуємо [3,4,5,6,1,2].
+{
+    let n = parseInt(prompt("Enter dimension 'N'", ""))
+    let k = parseInt(prompt("Enter value 'k' (k < N)", ""))
+    let arr = [];
+    
+    for (let i = 0; i < n; i++) {
+        arr[i] = Math.floor(Math.random()*100 + 1);
+    }
+    console.log(arr);
+    
+    for (let i = 0; i < k; i++) {
+        arr.push(arr[i]);
+    }
+
+    for (let i = 0; i < k; i++) {
+        arr.shift(arr[i]);
+    }
+    console.log(arr);
+}
+
+// 5.	Дано числовий масив розмірності N. Знайти кількість його локальних мінімумів. Локальним мінімумом називається елемент, значення якого менше від сусідів
+{
+    let n = parseInt(prompt("Enter dimension 'N'", ""))
+    let arr = [];
+    let count = 0;
+
+    for (let i = 0; i < n; i++) {
+        arr[i] = Math.floor(Math.random()*100 + 1);
+    }
+    console.log(arr);
+    
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i] < arr[i - 1] && arr[i] < arr[i + 1]) {
+            count++;
+        }
+
+    }
+    
+    if (arr[0] < arr[1]) {
+        count++;
+    }
+    
+    if (arr[arr.length - 1] < arr[arr.length - 2]) {
+        count++;
+    }
+    console.log(count);
+}
+
+// 6.	Дано масив розмірності N.  Визначити максимальну кількість його однакових елементів.
+{
+    let n = parseInt(prompt("Enter dimension 'N'", ""))
+    let arr = [];
+    let count = 1;
+    let countMax = 0;
+
+    for (let i = 0; i < n; i++) {
+        arr[i] = Math.floor(Math.random()*10 + 1);
+    }
+
+    console.log(arr);
+
+    for (let i = 0; i < arr.length; i++) {
+
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                if (count > countMax) {
+                    countMax = count;
+                }
+            }
+        }
+
+        count = 1;
+    }
+    console.log(`countMax = ${countMax}`);
+}
+
+// 7.	Дано масив розмірності N і число k ( k <N). Здійснити циклічний зсув елементів масиву вправо на k позицій. Наприклад для масиву [1,2,3,4,5,6] та k=2 після виконання зсуву отримуємо [5,6,1,2,3,4].
+{
+    let n = parseInt(prompt("Enter dimension 'N'", ""))
+    let k = parseInt(prompt("Enter value 'k' (k < N)", ""))
+    let arr = [];
+    
+    for (let i = 0; i < n; i++) {
+        arr[i] = Math.floor(Math.random()*100 + 1);
+    }
+    console.log(arr);
+    
+    for (let i = 1; i <= k; i++) {
+        arr.unshift(arr[arr.length - i]);
+    }
+
+    for (let i = 0; i < k; i++) {
+        arr.pop();
+    }
+    console.log(arr);
+}
