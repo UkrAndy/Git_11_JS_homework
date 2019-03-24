@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="src/script.js"></script> -->
+</head>
+<body>
+    <script>
+        let n = parseFloat(prompt("Enter dimension 'N'", ""))
+    let arr = [];
+    let arrSeriesLength = [];
+
+    for (let i = 0; i < n; i++) {
+        let series = parseInt(prompt("Enter a series", "0"));
+        arr[i] = new Array(series);
+        arrSeriesLength[i] = arr[i].length;
+    }
+    console.log(arrSeriesLength);
+    </script>
+</body>
+</html>
