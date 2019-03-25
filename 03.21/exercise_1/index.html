@@ -8,29 +8,6 @@
     <!-- <script src="src/script.js"></script> -->
 </head>
 <body>
-    <script>
-        let n = parseInt(prompt("Enter dimension 'N'", ""))
-    let arr = [];
-    let arrSeries = [];
-    let seriesLength = 0;
     
-    for (let i = 0; i < n; i++) {
-        arr.push(Math.floor(Math.random()*5 + 1));
-    }
-    console.log(arr);
-
-    next:for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] == arr[j]) {
-                seriesLength++;
-            } else {
-                arrSeries.push(seriesLength);
-                seriesLength = 0;
-                continue next;
-            }
-        }
-    }
-    console.log(arrSeries);
-    </script>
 </body>
 </html>
