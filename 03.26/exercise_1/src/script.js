@@ -1,7 +1,7 @@
 // Задача 1. Створити функцію, яка за номером місяця повертає його назву.
 {
     function month(monthNumber) {
-        switch (monthNumber) {
+        switch (monthNumber) {            //<-- Це звичайно добре, але можна було простіше реалізувати з використанням масиву
             case 1:
                 return "January";
                 break;
@@ -141,7 +141,7 @@
     function zeroToOne(arr) {
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
-                arr.splice(i, 1, 1);
+                arr.splice(i, 1, 1);                 // <-- Можна було просто замінити arr[i]=1
             }
         }
         return arr;
@@ -169,7 +169,7 @@
 
 // Задача 7. Створити функцію, яка випадковим чином виводить на екран зображення (шляхи до зображень передаються у функцію у вигляді масиву)
 {
-    function imgRandom(arrImg) {
+    function imgRandom(arrImg) {               <-- Спробуйте спростити
         let arrRnd = [];
 
         next:for (let i = 0; i < arrImg.length; i++) {
