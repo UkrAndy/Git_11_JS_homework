@@ -1,6 +1,9 @@
 // Задача 1. Створити функцію, яка за номером місяця повертає його назву.
 {
     function month(monthNumber) {
+        let monthes=['jan','feb','march']
+        return monthes[monthNumber];
+        
         switch (monthNumber) {
             case 1:
                 return "January";
