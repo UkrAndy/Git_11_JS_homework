@@ -193,4 +193,13 @@
 
         return;
     }
+
+    function imgRandom2(arrImg) {
+
+        function rnd() {
+            return (Math.random() - 0.5)
+        }
+        
+        return arrImg.sort(rnd);
+    }
 }
